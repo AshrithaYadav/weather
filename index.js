@@ -4,6 +4,7 @@ var city = document.querySelector('#cityoutput');
 var description = document.querySelector('#description');
 var temp = document.querySelector('#temp');
 var wind = document.querySelector('#wind');
+ 
    var apik = "c2d23ba20961753e1c232b9678716471";
 function conversion(val){
     return (val - 273).toFixed(3);
