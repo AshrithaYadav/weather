@@ -8,17 +8,28 @@ body{
    
     
 }
+label{
+    font-size: 20px;
+}
 .container{
    width :600px;
    margin:100px auto;
    padding: 40px;
+}
+.head{
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    height: 100px;
+
 }
 .inputs{
     padding: 2rem 0 2rem 0;
     text-align: center;
     justify-content: center;
     background: rgb(224,190,190);
-    height:150px;
+    height:200px;
 }
 .inputs input[type="text"]{
     height:4rem;
@@ -37,7 +48,7 @@ body{
 {
     height: 3rem;
     width:6rem;
-    background: #270aca;
+    background: #574d8d;
     font-weight: bold;
     color:white;
     font-size: 1rem;
@@ -77,8 +88,9 @@ body{
     color:skyblue;
 }
 .wrapper p span{
-    color:violet;
+    color:black;
     font-size: 25px;
 }
+
 
 

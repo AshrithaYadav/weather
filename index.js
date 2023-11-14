@@ -4,6 +4,8 @@ var city = document.querySelector('#cityoutput');
 var description = document.querySelector('#description');
 var temp = document.querySelector('#temp');
 var wind = document.querySelector('#wind');
+var pres = document.querySelector('#pressure');
+var humi = document.querySelector('#humidity');
  
    var apik = "c2d23ba20961753e1c232b9678716471";
 function conversion(val){
@@ -20,11 +22,15 @@ btn.addEventListener('click',function()
         var weatherDescrip = data['weather']['0']['description'];
         var temparature = data['main']['temp'];
         var windspeed = data['wind']['speed'];
+        var pressure = data['main']['pressure'];
+        var humidity = data['main']['humidity'];
  
         city.innerHTML=`Weather of <span>${nameval}</span>`;
-        temp.innerHTML=`Temperature:<span>${conversion(temparature)} C</span>`;
-        description.innerHTML=`Sky Condition:<span>${weatherDescrip}</span>`;
-        wind.innerHTML=`WindSpeed:<span>${windspeed}km/h</span>`;
+        temp.innerHTML=`Temperature: <span>${conversion(temparature)} C</span>`;
+        description.innerHTML=`Sky Condition: <span>${weatherDescrip}</span>`;
+        wind.innerHTML=`WindSpeed: <span>${windspeed}km/h</span>`;
+        pres.innerHTML=`Pressure: <span>${pressure}</span>`;
+        humi.innerHTML=`Humidity: <span>${humidity}</span>`;
 
     })
     .catch(err=>alert('You entered Wrong City Name'));
